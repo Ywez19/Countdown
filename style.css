@@ -1,0 +1,92 @@
+:root{
+    --bg: #86A3B8;
+    --main: #E8D2A6;
+    --secMain: #F48484;
+    --danger: #F55050;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+.container p{
+    width: 120px;
+    padding: 20px 0;
+    color: #fff;
+    cursor: pointer;
+    font: bold;
+    font-size: 700;
+}
+.container p span{
+    color: var(--secMain);
+}
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.content p{
+    font-size: 45px;
+    font-weight: 600;
+   display: contents;
+   color: var(--main);
+}
+.content p span{
+    color: var(--secMain);
+}
+.content button{
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    margin-top: 5px;
+    padding: 12px 25px;
+    color: var(--bg);
+    cursor: pointer;
+    transition:.3s ease all;
+}
+button:hover {
+    opacity:.9;
+    background: #86A3B8;
+    color: #fff;
+    border-color: #86A3B8;
+}
+.launch-time{
+    display: flex;
+}
+.launch-time div{
+    flex-basis: 100px;
+    padding: 10px 10px;
+}
+.launch-time div p {
+    font-weight: 500;
+    color: #fff;
+}
+.rocket{
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 3;
+    }
+}
